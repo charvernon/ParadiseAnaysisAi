@@ -89,15 +89,15 @@ def fetch_ohlc(symbol: str, interval: str, outputsize: int) -> pd.DataFrame:
 
     response = requests.get(BASE_URL, params=params, timeout=30)
 
-try:
+    try:
     data = response.json()
-except Exception:
+    except Exception:
     raise RuntimeError(
         f"Twelve Data returned HTTP {response.status_code}. "
         "Check the symbol and API permissions."
     )
 
-if response.status_code >= 400:
+    if response.status_code >= 400:
     raise RuntimeError(
         f"Twelve Data error {response.status_code}: "
         f"{data.get('message', data)}"
