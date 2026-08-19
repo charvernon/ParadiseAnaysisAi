@@ -44,7 +44,6 @@ SYMBOLS = {
     "gold": os.getenv("SYMBOL_GOLD", "XAU/USD"),
     "silver": os.getenv("SYMBOL_SILVER", "XAG/USD"),
     "sp500": os.getenv("SYMBOL_SP500", "SPX"),
-    "nasdaq": os.getenv("SYMBOL_NASDAQ", "NDX"),
 }
 
 # Top-down order: highest timeframe first.
