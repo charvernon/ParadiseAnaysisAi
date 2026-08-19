@@ -226,7 +226,7 @@ with col1:
     selected_name = st.selectbox(
         "Market",
         list(MARKETS.keys()),
-        index=3,
+        index=0,
     )
 with col2:
     refresh = st.button("🔄 Refresh analysis", use_container_width=True)
