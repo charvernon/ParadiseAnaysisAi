@@ -98,10 +98,10 @@ def fetch_ohlc(symbol: str, interval: str, outputsize: int) -> pd.DataFrame:
         )
 
     if response.status_code >= 400:
-    raise RuntimeError(
-        f"Twelve Data error {response.status_code}: "
-        f"{data.get('message', data)}"
-    )
+        raise RuntimeError(
+            f"Twelve Data error {response.status_code}: "
+            f"{data.get('message', data)}"
+        )
 
     if data.get("status") == "error":
         raise RuntimeError(
