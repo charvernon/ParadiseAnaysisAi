@@ -58,7 +58,6 @@ MARKETS = {
     "Gold": "gold",
     "Silver": "silver",
     "S&P 500": "sp500",
-    "Nasdaq-100": "nasdaq",
 }
 
 def inject_streamlit_secrets_into_env():
@@ -76,7 +75,6 @@ def inject_streamlit_secrets_into_env():
         "SYMBOL_GOLD",
         "SYMBOL_SILVER",
         "SYMBOL_SP500",
-        "SYMBOL_NASDAQ",
     ]
     for key in secret_keys:
         try:
