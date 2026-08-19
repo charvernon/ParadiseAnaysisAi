@@ -48,8 +48,6 @@ SYMBOLS = {
 
 # Top-down order: highest timeframe first.
 TIMEFRAMES = [
-    ("1month", 120),
-    ("1week", 220),
     ("1day", 300),
     ("4h", 400),
     ("1h", 500),
